@@ -12,10 +12,15 @@ function App() {
     try {
       setLoading(true);
 
-      const res = await axios.post("https://cognitia-ai-two.vercel.app/ask", {
-        question
-      });
-
+const res = await axios.post(
+  "https://cognitia-ai-two.vercel.app/ask",
+  { question },
+  {
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }
+);
       setAnswer(res.data.answer);
     } catch (err) {
       setAnswer("⚠️ Error fetching response");

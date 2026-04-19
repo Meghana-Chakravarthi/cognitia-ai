@@ -1,4 +1,5 @@
 import express from "express";
+import fetch from "node-fetch";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
