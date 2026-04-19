@@ -12,7 +12,7 @@ function App() {
     try {
       setLoading(true);
 
-      const res = await axios.post("https://vercel.com/meghana-chakravarthis-projects/cognitia-ai", {
+      const res = await axios.post("https://cognitia-ai-two.vercel.app/ask", {
         question
       });
 
