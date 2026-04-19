@@ -42,8 +42,8 @@ cd cognitia-ai
 cd backend
 npm install
 Create `.env` file:
-GROQ_API_KEY=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
-MONGO_URI=mongodb+srv://meghana:meghana274@cognitia-cluster.qjlnycp.mongodb.net/mydb?retryWrites=true&w=majority
+GROQ_API_KEY=your_groq_api_key
+MONGO_URI=your_mongodb_url
 
 Run backend: npm start
 
